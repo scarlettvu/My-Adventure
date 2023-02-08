@@ -13,6 +13,8 @@
 		06B2664A29939A46002E9E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B2664829939A46002E9E0D /* Main.storyboard */; };
 		06B2664C29939A48002E9E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B2664B29939A48002E9E0D /* Assets.xcassets */; };
 		06B2664F29939A48002E9E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B2664D29939A48002E9E0D /* LaunchScreen.storyboard */; };
+		06B266582993A10F002E9E0D /* AdventureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B266572993A10F002E9E0D /* AdventureController.swift */; };
+		06B2665B2993A132002E9E0D /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B2665A2993A132002E9E0D /* Adventure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		06B2664B29939A48002E9E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06B2664E29939A48002E9E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06B2665029939A48002E9E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B266572993A10F002E9E0D /* AdventureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureController.swift; sourceTree = "<group>"; };
+		06B2665A2993A132002E9E0D /* Adventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		06B2664129939A46002E9E0D /* My Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				06B266592993A121002E9E0D /* Model */,
+				06B266562993A0F9002E9E0D /* View */,
 				06B2664229939A46002E9E0D /* AppDelegate.swift */,
 				06B2664429939A46002E9E0D /* SceneDelegate.swift */,
-				06B2664629939A46002E9E0D /* ViewController.swift */,
 				06B2664829939A46002E9E0D /* Main.storyboard */,
 				06B2664B29939A48002E9E0D /* Assets.xcassets */,
 				06B2664D29939A48002E9E0D /* LaunchScreen.storyboard */,
 				06B2665029939A48002E9E0D /* Info.plist */,
 			);
 			path = "My Adventure";
+			sourceTree = "<group>";
+		};
+		06B266562993A0F9002E9E0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06B2664629939A46002E9E0D /* ViewController.swift */,
+				06B266572993A10F002E9E0D /* AdventureController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06B266592993A121002E9E0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06B2665A2993A132002E9E0D /* Adventure.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			files = (
 				06B2664729939A46002E9E0D /* ViewController.swift in Sources */,
 				06B2664329939A46002E9E0D /* AppDelegate.swift in Sources */,
+				06B266582993A10F002E9E0D /* AdventureController.swift in Sources */,
+				06B2665B2993A132002E9E0D /* Adventure.swift in Sources */,
 				06B2664529939A46002E9E0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

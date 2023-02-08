@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="VMU-Ip-euf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qbH-Xr-IhO">
+                                <rect key="frame" x="30" y="89" width="333" height="733"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEX-Mn-N3T">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="244"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufo" translatesAutoresizingMaskIntoConstraints="NO" id="e2I-QY-diE">
+                                                <rect key="frame" x="91.666666666666686" y="47" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="FeQ-ui-CUb"/>
+                                                    <constraint firstAttribute="height" constant="150" id="Ygi-TX-r77"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="e2I-QY-diE" firstAttribute="centerX" secondItem="UEX-Mn-N3T" secondAttribute="centerX" id="MeW-dr-4O2"/>
+                                            <constraint firstItem="e2I-QY-diE" firstAttribute="centerY" secondItem="UEX-Mn-N3T" secondAttribute="centerY" id="pGT-wg-nd4"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbM-zx-j2w">
+                                        <rect key="frame" x="40" y="244" width="253" height="244.33333333333337"/>
+                                        <string key="text">You are an astronaut. You wake up and you see suddenly yourself in the middle of space. You see a UFO suddenly appear above you. As shook as you are, what do you do?</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-Ah-P1q">
+                                        <rect key="frame" x="30" y="488.33333333333343" width="273" height="244.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2h-W7-2oP">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="114.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSubmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2l-RR-eXL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIe-3p-36B">
+                                                <rect key="frame" x="0.0" y="129.66666666666663" width="273" height="115"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSubmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2t-3Z-ZIx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j0n-Ah-P1q" secondAttribute="trailing" constant="30" id="5r1-VE-NzX"/>
+                                    <constraint firstItem="jbM-zx-j2w" firstAttribute="height" secondItem="UEX-Mn-N3T" secondAttribute="height" id="PzZ-Gx-ueM"/>
+                                    <constraint firstItem="jbM-zx-j2w" firstAttribute="leading" secondItem="qbH-Xr-IhO" secondAttribute="leading" constant="40" id="QT3-gs-5uq"/>
+                                    <constraint firstItem="j0n-Ah-P1q" firstAttribute="height" secondItem="UEX-Mn-N3T" secondAttribute="height" constant="0.69999999999999996" id="Tqg-G1-XD6"/>
+                                    <constraint firstAttribute="trailing" secondItem="jbM-zx-j2w" secondAttribute="trailing" constant="40" id="Yyf-mi-I2X"/>
+                                    <constraint firstItem="j0n-Ah-P1q" firstAttribute="leading" secondItem="qbH-Xr-IhO" secondAttribute="leading" constant="30" id="bvS-t2-eJv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qbH-Xr-IhO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1iH-dI-bLJ"/>
+                            <constraint firstItem="VMU-Ip-euf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Mq-Wr-Iy5"/>
+                            <constraint firstAttribute="bottom" secondItem="qbH-Xr-IhO" secondAttribute="bottom" constant="30" id="AYj-u8-KU4"/>
+                            <constraint firstItem="VMU-Ip-euf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="AwT-s8-j4A"/>
+                            <constraint firstItem="VMU-Ip-euf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gbr-cL-GBT"/>
+                            <constraint firstItem="qbH-Xr-IhO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="jeb-6K-DUC"/>
+                            <constraint firstItem="VMU-Ip-euf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="sLk-Ng-fK6"/>
+                            <constraint firstAttribute="trailing" secondItem="qbH-Xr-IhO" secondAttribute="trailing" constant="30" id="zCF-q1-fNT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="space" width="460" height="1022"/>
+        <image name="ufo" width="839" height="663"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
