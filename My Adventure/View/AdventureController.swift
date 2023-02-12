@@ -56,7 +56,7 @@ struct AdventureController {
   
     
     var scenarioIndex = 0
-        func getTitle() ->String{
+        func getTitle() -> String{
             return scenarios[scenarioIndex].title
         }
 

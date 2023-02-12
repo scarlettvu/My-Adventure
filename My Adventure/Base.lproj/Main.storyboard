@@ -58,6 +58,9 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSubmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9K-du-5gl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIe-3p-36B">
                                                 <rect key="frame" x="0.0" y="129.66666666666663" width="273" height="115"/>
@@ -69,6 +72,9 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="choiceSubmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Si-yr-1Li"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -98,6 +104,9 @@
                     </view>
                     <connections>
                         <outlet property="adventureQuestion" destination="jbM-zx-j2w" id="t70-pa-zmv"/>
+                        <outlet property="background" destination="VMU-Ip-euf" id="hP8-34-XeF"/>
+                        <outlet property="choiceOne" destination="C2h-W7-2oP" id="Nds-x3-CWg"/>
+                        <outlet property="choiceTwo" destination="tIe-3p-36B" id="NfV-rN-VqG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
